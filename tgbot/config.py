@@ -2,6 +2,8 @@ from dataclasses import dataclass
 
 from environs import Env
 
+from tgbot.storage.storage import Storage
+
 
 @dataclass
 class DbConfig:
@@ -46,5 +48,5 @@ def load_config(path: str = None):
             user=env.str('DB_USER'),
             database=env.str('DB_NAME')
         ),
-        misc=Miscellaneous()
+        misc=Miscellaneous(),
     )
