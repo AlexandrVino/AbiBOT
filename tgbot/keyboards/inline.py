@@ -1,4 +1,3 @@
-from json import loads
 from typing import Dict, List
 
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
